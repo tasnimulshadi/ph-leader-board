@@ -1,0 +1,73 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* css custom properties */
+:root {
+    --font-Poppins: 'Poppins', sans-serif;
+}
+
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F1FF;
+    font-family: var(--font-Poppins);
+    /* css custom property */
+}
+
+.container {
+    background-color: white;
+    /* width: 870px; */
+    width: 840px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+hr {
+    /* width: 807px; */
+    border: 1px solid #D1D1D1;
+    background-color: #D1D1D1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 36px 0;
+}
+
+/* top player & top bolg styles */
+/* top player */
+.top-players {}
+
+.top-players h2 {
+    font-size: 24px;
+    color: #562EFF;
+    margin-bottom: 10px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding: 30px 0;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+.player h3 {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* top bolg */
