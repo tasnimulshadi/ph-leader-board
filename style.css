@@ -103,7 +103,7 @@ main {
 }
 
 .blog-thumbnail img:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .blog-info h3 {
@@ -276,12 +276,20 @@ main {
         height: 150px;
     }
 
+    .blog-thumbnail img:hover {
+        transform: none;
+    }
+
     .blog-info h3 {
         font-size: 17px;
     }
 
     .blog-info p {
         font-size: 13px;
+    }
+
+    .blog-info p a:hover {
+        font-weight: 400;
     }
 
     .latest-courses {
@@ -330,7 +338,51 @@ main {
 }
 
 /* Medium Devices */
-@media screen and (min-width:577px) and (max-width:768px) {}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
 
-/* Large Devices */
-@media screen and (min-width:767px) and (max-width:992px) {}
+    .section-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 50px;
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-thumbnail,
+    .blog-info {
+        width: 250px;
+    }
+
+    .blog-thumbnail img {
+        height: 140px;
+    }
+
+    .blog-thumbnail img:hover {
+        transform: none;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        justify-items: center;
+    }
+
+    .course {
+        width: 250px;
+    }
+
+    .course-banner {
+        height: 135px;
+    }
+}
